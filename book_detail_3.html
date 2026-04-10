@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details - Silent Library</title>
+    
+    <!-- Google Fonts (Libre Baskerville) -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom font application -->
+    <style>
+     body {
+      font-family: 'Libre Baskerville', serif;
+     }
+  </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Main Section -->
+   <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="https://m.media-amazon.com/images/I/711ax9mhqaL._SY466_.jpg" alt="Modern Retirement Strategies" class="img-fluid book-cover mb-4">
+      </div>
+      <div class="col-md-8">
+          <h2>TModern Retirement Strategies</h2>
+          <p><strong>Author:</strong> Comp Financial Industry Thought Leaders</p>
+          <p><strong>Category:</strong> Personal Finance</p>
+          <p><strong>Published:</strong> 15 October 2020</p>
+          <p><strong>Language:</strong> English</p>
+          <p style="color:red;"><strong>Availability:</strong> Unavailable</p>
+          <p class="mt-4">A Compilation of Financial Industry Thought Leaders:
+Donald Albach, President, Millstone Financial Group
+Jamie Baraldi, Founder and CEO, Peak Wealth Partners
+John Davenport, President, Davenport & Associates
+Grant Dorhout, Founder and President, Dorhout Retirement Services
+Rick Durkee, President, Founder, and CIA, Coastal Financial Planning Group
+Billy Evans, Founder and CEO, Evans Financial Services
+Bryan Foster, CEO, BFFinancial
+Carol Carroll, Senior Vice President, BFFinancial
+Ben Fuchs, Founder, Fuchs Financial
+Victor Gray, Founder, Victor Gray Financial Services
+Michael Russo, Chief Financial Officer, Millstone Financial Group
+Paul Taylor, Founder, Capital Advisory Group
+
+"Get excited about financial planning for your future with 'Modern Retirement Strategies'."
+- Bob Proctor, Author of the International Best Seller, "You Were Born Rich", World-Renowned Speaker, and Featured Expert in "The Secret"
+
+"This book is your guide to creating a simple, reliable financial plan for you and your loved ones."
+- Dr. Zayd Abdul-Karim, Author of the No. 1 Amazon Bestseller, "Engage!: To Create Super Performance and Profitability", Speaker, and Mentor
+
+"It's your life and your money, so plan ahead with 'Modern Retirement Strategies'."
+- Dan Fowler, Sales Executive, Small-to-Medium Business Sales Consultant, Executive Coach, and Author of Strategic Growth in Inside Sales</p>
+          <a href="books.html" class="btn btn-outline-secondary mt-3">← Back to Book List</a>
+          <a href="#" class="btn btn-outline-secondary mt-3">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Inject header and footer -->
+    <script>
+        fetch("../styles/header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("../styles/footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+
+    </script>
+</body>
+</html>

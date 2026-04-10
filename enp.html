@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Silent Library</title>
+    
+    <!-- Google Fonts (Libre Baskerville) -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom font application -->
+    <style>
+    body {
+      font-family: 'Libre Baskerville', serif;
+    }
+    .event-card {
+      margin-bottom: 30px;
+    }
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.5);
+      padding: 1rem;
+      border-radius: 0.5rem;
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Main Section -->
+  <div class="container mt-5 mb-4">
+    <h1 class="text-center mb-4">Promotions & Events</h1>
+
+    <!-- Carousel Highlights -->
+    <div id="highlightCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.hkreadingcity.net/sites/default/files/u1642383/main_1920x590_eng.jpg" class="d-block w-100" alt="Free Reading Week" style="height: 300px; width: auto; object-fit: contain;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Free Reading Week</h5>
+            <p>Enjoy unlimited access to digital titles this April!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.squarespace-cdn.com/content/v1/62d09dbc3ecb182bd82c94d4/e5bcb586-da2f-4dc2-9023-a8fc0b34c77d/Mindfulness+In+person+Workshop+thumbnail.png?format=1500w" class="d-block w-100" alt="Mindfulness Workshop" style="height: 300px; width: auto; object-fit: contain;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Mindfulness Workshop</h5>
+            <p>Join our guided session tailored for working adults.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5nG8ktsi47ZyiTRsxgPNms53ygoAJapMkKg&s" class="d-block w-100" alt="Senior Literacy Club" style="height: 300px; width: auto; object-fit: contain;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Senior Book Group</h5>
+            <p>Monthly meetups to enjoy and discuss books together.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#highlightCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#highlightCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- Event List -->
+    <div class="row">
+      <div class="col-md-6 event-card">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Author Talk: Jane Maxwell</h5>
+            <p class="card-text">Join Jane Maxwell as she discusses her journey writing 'The Art of Mindful Living'.</p>
+            <p class="text-muted">Date: 10 July 2025 | Time: 3:00PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 event-card">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Digital Skills for Seniors</h5>
+            <p class="card-text">Learn how to navigate digital libraries, use eBooks, and stay connected online.</p>
+            <p class="text-muted">Date: 12 July 2025 | Time: 2:00PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 event-card">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Professional Networking Café</h5>
+            <p class="card-text">Meet like-minded individuals and build community around shared interests.</p>
+            <p class="text-muted">Date: 18 July 2025 | Time: 6:00PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 event-card">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">Wellness Reads Week</h5>
+            <p class="card-text">Explore titles that support emotional and mental well-being with a free borrowing promo.</p>
+            <p class="text-muted">Promotion valid: 1–7 July 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Inject header and footer -->
+    <script>
+        fetch("../styles/header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("../styles/footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+
+    </script>
+
+</body>
+</html>

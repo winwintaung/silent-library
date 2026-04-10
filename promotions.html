@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silent Library</title>
+    
+    <!-- Load local Bootstrap -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Main Section -->
+
+        <!-- Example Book Card -->
+
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Inject header and footer -->
+    <script>
+        fetch("../styles/header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("../styles/footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+
+    </script>
+
+</body>
+</html>

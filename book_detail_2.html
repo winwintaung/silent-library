@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details - Silent Library</title>
+    
+    <!-- Google Fonts (Libre Baskerville) -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom font application -->
+    <style>
+     body {
+      font-family: 'Libre Baskerville', serif;
+     }
+  </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Main Section -->
+   <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="https://m.media-amazon.com/images/I/71KSaHUChvL._SY466_.jpg" alt="Leading with Empathy" class="img-fluid book-cover mb-4">
+      </div>
+      <div class="col-md-8">
+          <h2>The Art of Mindful Living</h2>
+          <p><strong>Author:</strong> Gautham Pallapa</p>
+          <p><strong>Category:</strong> Communication & Psychology</p>
+          <p><strong>Published:</strong> 17 November 2021</p>
+          <p><strong>Language:</strong> English</p>
+          <p style="color:darkorange;"><strong>Availability:</strong> Limited</p>
+          <p class="mt-4"><strong>Learn to lead others through adversity with the power of human connection. </strong></p>
+          <P>In Leading with Empathy: Understanding the Needs of Today’s Workforce, acclaimed strategist and business leader Dr. Gautham Pallapa presents an insightful roadmap to leading people through adversity and empowering humans in the workplace, the home, and society. </P>
+          <P>Through this book, the distinguished author examines the impact of recent world-shaking events and how they have impacted us as a species and as individuals. He explores how empathy can help alleviate some of the more harmful effects of hardship and offers key actions that empathic leaders can take to inspire their followers. Finally, the book describes how to transform the way we work by rethinking and reimagining existing processes and innovatively introducing strategic disruption. </P>
+          <P>Leading with Empathy also includes: </P>
+          <li>Stories, anecdotes, and personal musings that grant visibility and validation to the suffering of others </li>
+          <li>Exercises and strategies to reduce stress, anxiety, and improve happiness and positivity </li>
+          <li>Actions that enable leaders to empower people through empathy, collaboration, and communication. </li>
+          <P>An essential read for executives, managers, and business leaders of all types, Leading with Empathy will also earn a place on the bookshelves of military, athletic, and educational leaders who seek to inspire their followers and empower humanity in the face of adversity. </p>
+          <a href="books.html" class="btn btn-outline-secondary mt-3">← Back to Book List</a>
+          <a href="#" class="btn btn-outline-secondary mt-3">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Inject header and footer -->
+    <script>
+        fetch("../styles/header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("../styles/footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+
+    </script>
+</body>
+</html>

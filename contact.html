@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Silent Library</title>
+    
+    <!-- Google Fonts (Libre Baskerville) -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom font application -->
+    <style>
+     body {
+      font-family: 'Libre Baskerville', serif;
+     }
+    </style>
+
+</head>
+
+<body>
+    
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Main Section -->
+    <div class="container mt-5 mb-5">
+    <h1 class="text-center mb-4">Contact Us</h1>
+    <p class="text-center text-muted">We'd love to hear from you. Please fill out the form below.</p>
+
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" class="form-control" id="subject" placeholder="Message subject">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Type your message here..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="text-center mt-5">
+      <p><strong>Silent Library</strong></p>
+      <p>123 Quiet Street, Singapore 600000</p>
+      <p>Email: <a href="mailto:info@silentlibrary.sg">info@silentlibrary.sg</a></p>
+      <p>Phone: +65 6000 1234</p>
+    </div>
+  </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Inject header and footer -->
+    <script>
+        fetch("../styles/header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("../styles/footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+
+    </script>
+
+</body>
+</html>

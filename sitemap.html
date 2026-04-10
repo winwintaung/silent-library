@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Silent Library</title>
+    
+    <!-- Google Fonts (Libre Baskerville) -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom font application -->
+    <style>
+    body {
+      font-family: 'Libre Baskerville', serif;
+    }
+    .sitemap a {
+      text-decoration: none;
+      display: block;
+      padding: 0.5rem 0;
+      color: #0d6efd;
+    }
+    .sitemap a:hover {
+      text-decoration: underline;
+    }
+    </style>
+
+</head>
+
+<body>
+    
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Main Section -->
+   <div class="container mt-5 mb-5">
+    <h1 class="text-center mb-4">Site Map</h1>
+    <p class="text-center text-muted">Overview of all accessible pages within the Silent Library website.</p>
+
+    <div class="row justify-content-center sitemap">
+      <div class="col-md-6">
+        <h4>Navigation Links</h4>
+        <a href="main.html">Home</a>
+        <a href="books.html">Books</a>
+        <a href="enp.html">Promotions & Events</a>
+        <a href="promotions.html">Promotions</a>
+        <a href="events.html">Events</a>
+        <a href="../pages/contact.html">Contact Us</a>
+        <a href="../pages/privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Inject header and footer -->
+    <script>
+        fetch("../styles/header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("../styles/footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+
+    </script>
+
+</body>
+</html>

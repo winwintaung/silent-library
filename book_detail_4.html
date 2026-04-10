@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details - Silent Library</title>
+    
+    <!-- Google Fonts (Libre Baskerville) -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom font application -->
+    <style>
+     body {
+      font-family: 'Libre Baskerville', serif;
+     }
+  </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Main Section -->
+   <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="https://m.media-amazon.com/images/I/61uDTjfDMsL._SY385_.jpg" alt="HTML For Dummies" class="img-fluid book-cover mb-4">
+      </div>
+      <div class="col-md-8">
+          <h2>The Art of Mindful Living</h2>
+          <p><strong>Author:</strong> Ed Tittel</p>
+          <p><strong>Category:</strong> Web Development</p>
+          <p><strong>Published:</strong> 7 July 1997</p>
+          <p><strong>Language:</strong> English</p>
+          <p style="color:green;"><strong>Availability:</strong> Available</p>
+          <p class="mt-4">New Web authoring tools such as Claris Home Page, Microsoft FrontPage, and Adobe PageMill almost take care of all the HTML markup needed to build great-looking Web pages. Fortunately or unfortunately, depending on how you look at it, the spirit of innovation rages on at companies like Netscape and Microsoft -- and stays well-ahead of even the best Web authoring tools. That's why it pays to have the completely updated HTML For Dummies, 3rd Edition, on hand so that you peer under the hood of your Web pages to add Netscape Navigator and Internet Explorer enhancements, JavaScript, ActiveX, and Java applets that heighten the functionality and style of your whole Web site. Plus, Web pros Ed Tittel and Steven N. James share their savvy advice on when and when not to use nonstandard HTML tags, including how to accommodate visitors using early, less capable browsers, and how to organize a large Web site so that it makes sense to you and your visitors. Best of all, HTML For Dummies, Third Edition, includes a bonus disk containing HTML templates, software, and other terrific resources to help you build great Web pages fast.</p>
+          <a href="books.html" class="btn btn-outline-secondary mt-3">← Back to Book List</a>
+          <a href="#" class="btn btn-outline-secondary mt-3">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Inject header and footer -->
+    <script>
+        fetch("../styles/header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("../styles/footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+
+    </script>
+</body>
+</html>

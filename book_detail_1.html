@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details - Silent Library</title>
+    
+    <!-- Google Fonts (Libre Baskerville) -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+
+    <!-- Custom font application -->
+    <style>
+     body {
+      font-family: 'Libre Baskerville', serif;
+     }
+  </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Main Section -->
+   <div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-md-4 text-center">
+        <img src="https://m.media-amazon.com/images/I/51NFWY10M5L._SY342_.jpg" alt="The Art of Mindful Living" class="img-fluid book-cover mb-4">
+      </div>
+      <div class="col-md-8">
+          <h2>The Art of Mindful Living</h2>
+          <p><strong>Author:</strong> Thich Nhat Hanh</p>
+          <p><strong>Category:</strong> Wellness & Lifestyle</p>
+          <p><strong>Published:</strong> 1 November 2000</p>
+          <p><strong>Language:</strong> English</p>
+          <p style="color:green;"><strong>Availability:</strong> Available</p>
+          <p class="mt-4">Zen meditation master Thich Nhat Hanh offers his practical teachings about how to bring love and mindful awareness into our daily experience. Kind, purposeful, and illuminating―here is an abundant treasure of traditional gathas (teachings) that unify meditation practice with the challenges we face in today's world. Enhanced features include Vietnamese music from Plum Village, video footage of Thich Nhat Hanh about mindfulness, and a text interview with the author. Course objectives: Describe how Thich Nhat Hanh's teachings can help the listener to achieve a more authentic self • List the traditional teachings (gathas) described by Thich Nhat Hanh • Utilize breathing techniques to deal with issues such as pain, anger and maintaining strength in times of difficulty • List the aforementioned techniques • Demonstrate how to maintain being in the present, not getting lost in the past or caught up in the future Note: These CD-ROM-format enhanced CDs contain audio, music, and video clips and are meant to be played on your computer, using an Internet connection, speakers, and Real Player programs, which are free for download. Enhanced content is exclusive to CD version</p>
+          <a href="books.html" class="btn btn-outline-secondary mt-3">← Back to Book List</a>
+          <a href="#" class="btn btn-outline-secondary mt-3">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Inject header and footer -->
+    <script>
+        fetch("../styles/header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("../styles/footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+
+    </script>
+</body>
+</html>
